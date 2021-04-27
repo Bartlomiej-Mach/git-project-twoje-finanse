@@ -1,0 +1,112 @@
+.footer-section {
+    width: 100%;
+    padding: 61px 0 91px 360px;
+    @include center-left;
+    background: $p_color;
+
+    @include bigscreen {
+        width: 1920px;
+    }
+    @include laptop {
+        padding: 61px 0 91px 220px;
+    }
+    @include halfscreen {
+        padding: 61px 0 91px 130px;   
+    }
+    @include tabPort {
+        padding: 61px 0 91px 40px;
+    }
+    @include phone {
+        padding: 61px 0 91px 20px;
+    }
+    &__footer-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 50px 50px;
+        @include phone {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        @include smaller-than-425 {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        .column-footer {
+            display: grid;
+            grid-template-rows: 40px 1fr;
+            
+            .footer-topic-words {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: $second-font;
+                color: white;
+                @include smaller-than-1300 {
+                    font-size: 17px;
+                }
+                @include smaller-than-1050 {
+                    font-size: 15px;
+                }
+            }
+            .link-footer {
+                font-size: 16px;
+                font-family: $main-font;
+                color: white;
+                margin-bottom: 7px;
+                position: relative;
+                @include smaller-than-1300 {
+                    font-size: 14px;
+                }
+                @include smaller-than-1050 {
+                    font-size: 12px;
+                }
+                @include smaller-than-960 {
+                    font-size: 10px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: $t_color;
+                    top: 50%;
+                    transform: translateY(-30%);
+                    left: -15px;
+                    opacity: 0;
+                    clip-path: polygon(0 0, 0 100%, 100% 50%);
+                }
+                &:hover::before{
+                    opacity: 1;
+                }
+            }
+            
+
+            
+            .special-footer {
+                color: $t_color;
+            }
+            .link-footer:last-child{
+                margin-bottom: 0;
+                
+            }
+            .phone-number-footer {
+                font-weight: bold;
+                color: $t_color;
+                font-style: $main-font;
+                font-size: 25px;
+                @include smaller-than-1300 {
+                    font-size: 20px;
+                }
+                @include smaller-than-1050 {
+                    font-size: 18px;
+                }
+                @include smaller-than-960 {
+                    font-size: 15px;
+                }
+            }
+        }
+        .column-2 {
+            color: white;
+        }
+    }
+}

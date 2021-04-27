@@ -1,0 +1,42 @@
+/* 
+Imported folders from main folder to get css styles from every one sections of  scss.
+*/
+
+@import "./respond-variables/respond";
+@import "./variables/variables";
+@import "./navigation-section/navigation-section";
+@import "./main-section/main-section";
+@import "./info-section/info-section";
+@import "./footer-section/footer-section";
+
+
+
+/* 
+Main things about box-sizezing, body and html + <a> specification for all website.
+*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: $main-font;
+    @include center-column();
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}

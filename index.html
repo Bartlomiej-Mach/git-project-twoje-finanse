@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twoje finanse</title>
+    <meta name="description" content="TwojeFinanse - ubezpieczenia majątkowe">
+    <meta name="keywords" content="..."> <!-- Key words-->
+    <meta name="author" content="Bartłomiej Mach">
+
+    <!--***************************-->
+
+    <!-- FILES .CSS-->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- FONTS / ICONS -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <!-- APLICATIONS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./imgs/logo.png">
+    
+    <!-- ************************* -->
+</head>
+<body>
+    <!--NAVIGATION SECTION-->
+    <nav class="nav-section">
+        <div class="nav-section__left-side">
+            <div class="logo-box">
+                <div class="bolder-logo"><span class="color-bold-logo">twoje</span><span class="color-light-logo">finanse</span></div>
+                <span class="second-floor">ubezpieczenia</span>
+            </div>
+        </div>
+
+        <!--First part of navigation it is created for big screens like 1920px+ -->
+        <div class="nav-section__right-side">
+            <ul class="navigation-button-box">
+                <a href="#" class="navigation-button-box--item">
+                    <li class="list-item">
+                        o nas
+                    </li>
+                </a>
+                <a href="#" class="navigation-button-box--item">
+                    <li class="list-item">
+                        oferta
+                    </li>
+                </a>
+                <a href="#" class="navigation-button-box--item">
+                    <li class="list-item">
+                        towarzystwa ubezpieczeń
+                    </li>
+                </a>
+                <a href="#" class="navigation-button-box--item">
+                    <li class="list-item">
+                        dołącz do nas
+                    </li>
+                </a>
+                <a href="#" class="navigation-button-box--item">
+                    <li class="list-item">
+                        przydatne materiały
+                    </li>
+                </a>
+                <a href="#" class="navigation-button-box--item">
+                    <li class="list-item">
+                        oddziały
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <!--Second side of navigation it is created for smaller screens for tablets-phones -->
+        <div class="nav-section__right-side-phone">
+            <button class="btn-navi">
+                <div class="line"></div>
+            </button>
+        
+            <div class="navigation-menu">
+                <ul class="navigation-button-box">
+                    <a href="#" class="navigation-button-box--item">
+                        <li class="list-item">
+                            o nas
+                        </li>
+                    </a>
+                    <a href="#" class="navigation-button-box--item">
+                        <li class="list-item">
+                            oferta
+                        </li>
+                    </a>
+                    <a href="#" class="navigation-button-box--item">
+                        <li class="list-item">
+                            towarzystwa ubezpieczeń
+                        </li>
+                    </a>
+                    <a href="#" class="navigation-button-box--item">
+                        <li class="list-item">
+                            dołącz do nas
+                        </li>
+                    </a>
+                    <a href="#" class="navigation-button-box--item">
+                        <li class="list-item">
+                            przydatne materiały
+                        </li>
+                    </a>
+                    <a href="#" class="navigation-button-box--item">
+                        <li class="list-item">
+                            oddziały
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    
+
+    </nav>
+
+    <!--HOME SECTION-->
+    <main class="main-section">
+        <div class="bg-image">
+            <img src="./imgs/shutterstock_1105116683.png" alt="back groud img">
+        </div>
+        <div class="main-section__left-side">
+            <div class="home-words-box">
+                <h1 class="home-words">Ubezpieczenie majątkowe</h1>
+                <span class="home-sec-words">
+                Skontaktuj się z nami i skorzystaj </br>
+                ze specjalnej oferty!
+                </span>
+            </div>
+            
+        </div>
+
+        <div class="main-section__right-side">
+            <div class="home-form-box">
+                <h2 class="form-words">
+                    Podaj dane kontaktowe, a my </br>
+                    przygotujemy najlepszą ofertę
+                </h2>
+
+                <!-- Main form at home page. Form is conected by action="contact.php" -->
+                <form class="form-container" action="contact.php">
+                    <input class="name form-item" type="name" name="name" id="name" required="required" placeholder="Imię i nazwisko" />
+                    <input class="mail form-item" type="e-mail" name="e-mail" id="e-mail"required="required"  placeholder="Adres e-mail"/>
+                    <input class="phone form-item" type="tel" name="tel" id="tel" required="required" pattern="^[0-9]{9}$" placeholder="Nr telefonu" />
+                    <div class="second-floor">
+                        <input class="city" type="text" name="city" id="city" required="required" placeholder="Miejscowość" />
+                        <input class="p-code" type="text" name="post-code" id="post-code" required="required" pattern="^[0-9]{2}-[0-9]{3}$" placeholder="Kod pocztowy" />
+                    </div>
+                    
+                    <div class="third-floor">
+                        <input class="checkbox-form" type="checkbox" required="required" name="consent" id="consent" />
+                        <label class="label-form" for="consent">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        </label>
+                    </div>
+                    <button class="button-form">Wyślij</button>
+                    
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--INFORMATION SECTION-->
+    <section class="information-section">
+        <div class="bg-img-info">
+            <img src="./imgs/shutterstock_373266265.png" alt="info-img">
+        </div>
+        <div class="information-section__first-floor">
+            <h3 class="info-words">
+                Ubezpieczenie majątkowe
+            </h3>
+            <span class="info-words-2">
+                Co obejmują?
+            </span>
+        </div>
+        <div class="information-section__second-floor">
+            <div class="info-content-box-1">
+                <span class="info-content-1">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                </span>
+            </div>
+            <div class="info-content-box-2">
+                <span class="info-content-2">
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                </span>
+            </div>         
+        </div>
+        <a href="#" class="info-button-box">
+            
+                Zamów ubezpieczenie
+            
+        </a>
+
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer-section">
+        <div class="footer-section__footer-box">
+            <div class="column-1 column-footer">
+                <span class="footer-topic-words">O nas</span>
+                <a href="#" class="link-footer special-footer">Strona główna</a>
+                <a href="#" class="link-footer">O nas</a>
+                <a href="#" class="link-footer">Dołącz do nas</a>
+                <a href="#" class="link-footer">Zostań Agentem</a>
+                <a href="#" class="link-footer">Kartiera</a>
+            </div>
+            <div class="column-2 column-footer">
+                <span class="footer-topic-words">Ubezpieczenia</span>
+                <a href="#" class="link-footer">Ubezpieczenia mienia, nieruchomości</a>
+                <a href="#" class="link-footer">Ubezpieczenia osobowe</a>
+                <a href="#" class="link-footer">Ubezpieczenia rolne</a>
+                <a href="#" class="link-footer">Ubezpieczenie OC</a>
+                <a href="#" class="link-footer">Zobacz pełną ofertę</a>
+            </div>
+            <div class="column-3 column-footer">
+                <span class="footer-topic-words">Pomoc</span>
+                <a href="#" class="link-footer">Oddziały/Kontakt</a>
+                <a href="#" class="link-footer">Towarzystwa ubezpieczeniowe</a>
+                <a href="#" class="link-footer">Przydatne materiały</a>
+                <a href="#" class="link-footer">Informacje Administracyjne</a>
+                <a href="#" class="link-footer">Polityka cookies</a>
+            </div>
+            <div class="column-4 column-footer">
+                <span class="footer-topic-words">Infolinia</span>
+                <a href="tel:+48223111234" class="phone-number-footer">+48 22 311 1234</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS SCRIPTS APPLICATIONS-->
+        <script src="index.js"></script>
+        
+</body>
+</html>

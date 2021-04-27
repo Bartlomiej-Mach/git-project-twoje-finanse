@@ -1,0 +1,165 @@
+.information-section {
+    width: 100%;
+    position: relative;
+    padding-bottom: 96px;
+    @include bigscreen {
+        width: 1920px;
+    }
+    @include tabPort {
+        @include center-column;
+    }
+    .bg-img-info {
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        z-index: -1;
+        img {
+            @include smaller-than-1480 {
+                width: 100%;    
+            }
+        }
+    }
+
+    &__first-floor {
+        width: 100%;
+        padding-left: 360px;
+        @include laptop {
+            padding-left: 220px;
+        }
+        @include halfscreen {
+            padding-left: 130px;
+        }
+        @include smaller-than-1050 {
+            padding-left: 50px;
+        }
+        @include tabPort {
+            padding-left: 0;
+            @include center-column();
+            text-align: center;
+        }
+        
+
+        .info-words {
+            font-size: $h3-size;
+            color: $p_color;
+            font-family: $second-font;
+            margin-bottom: 8px;
+            font-weight: bold;
+            @include smaller-than-1480 {
+                font-size: 50px;
+            }
+            @include smaller-than-1300 {
+                font-size: 40px;
+            }
+            @include smaller-than-960 {
+                font-size: 30px;
+            }
+        }
+        .info-words-2 {
+            font-size: 34px;
+            color: $p_color;
+            font-family: $second-font;
+            font-weight: bold;
+            @include smaller-than-1480 {
+                font-size: 27px;
+            }
+            @include smaller-than-1300 {
+                font-size: 25px;
+            }
+            @include smaller-than-960 {
+                font-size: 20px;
+            }
+        }
+    }
+    &__second-floor {
+        margin-top: 24px;
+        width: 792px;
+        margin-left: 360px;
+        @include laptop {
+            margin-left: 220px;
+        }
+        @include halfscreen {
+            margin-left: 130px;
+        }
+        @include smaller-than-1480 {
+            width: 600px;
+        }
+        @include smaller-than-1050 {
+            margin-left: 50px;
+        }
+        @include tabPort {
+            margin-left: 0;
+            width: 80%;
+            @include center-column();
+        }
+        .info-content-box-1 {
+            width: 100%;
+            margin-bottom: 1.8em;
+            
+        }
+        .info-content-1 {
+            font-size: 17px;
+            font-family: $main-font;
+            font-weight: bold;
+            line-height: 1.8em;
+            @include smaller-than-1480 {
+                font-size: 15px;
+            }
+            @include smaller-than-1300 {
+                font-size: 13px;
+            }
+            @include smaller-than-960 {
+                font-size: 10px;
+            }
+            
+        }
+        .info-content-2 {
+            font-size: 17px;
+            font-family: $main-font;
+            line-height: 1.8em;
+            @include smaller-than-1480 {
+                font-size: 15px;
+            }
+            @include smaller-than-1300 {
+                font-size: 13px;
+            }
+            @include smaller-than-960 {
+                font-size: 10px;
+            }
+        }
+    }
+        .info-button-box {
+            @include center;
+            margin: 52px 0 0 360px;
+            width: 280px;
+            height: 56px;
+            font-family: $second-font;
+            color: white;
+            background: $t_color;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: .2s linear;
+            @include laptop {
+                margin: 52px 0 0 220px;
+            }
+            @include halfscreen {
+                margin-left: 130px;
+            }
+            @include smaller-than-1300 {
+                transform: scale(0.8);
+            }
+            @include smaller-than-1050 {
+                margin-left: 50px;
+            }
+            @include tabPort {
+                margin-left: 0;
+                transform: scale(0.6);
+            }
+            &:hover {
+                background: rgba($color: $s-color, $alpha: .87);
+            }
+        }
+    
+    
+}
